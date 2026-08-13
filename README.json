@@ -1,0 +1,383 @@
+{
+  "items": [
+    {
+      "description": "A model answers; an agent acts. An agent harness is the runtime that turns one into the other: the model thinks, the harness decides what that thinking is allowed to touch.\nSimon Willison's definition of the agent itself is the cleanest: \"an LLM agent runs tools in a loop to achieve a goal.\" The harness is everything around that loop: which tools exist, what needs approval, what the model sees each turn, what survives a crash. Andrej Karpathy named the architecture back in 2023: the model is \"the kernel process of a new Operating System\", and the harness is the rest of that OS, its scheduler, permissions, and memory. The SWE-agent paper proved the stakes by coining the agent-computer interface: how tools and feedback are presented changes what a model can do, independent of the model. The field's advice has since converged on investing here rather than in framework plumbing, from Anthropic's build-simple guidance to Jerry Liu's argument that the framework era is over and the layers that matter now are skills, tools, and context quality. Those are the layers this list catalogs.",
+      "items": [],
+      "title": "What is an agent harness?"
+    },
+    {
+      "description": "Better models make harnesses more important: more capabilities mean more failure modes, and production needs retry logic, fallbacks, and validation. Harness quality, not just model quality, determines whether agents actually ship. This list ranks projects by relevance to harness concerns (environment, orchestration, lifecycle, guardrails) and by stars/activity.\nThe benchmark data now backs this up. On SWE-bench Pro, \"swapping the agent harness changed pass@1 more than many model upgrades do\" (AINews, Aug 8 2026, citing analysis by @joelniklaus). Same model, different harness: 23% to 52% pass@1 on GLM-5.2, and 15% to 36% on Gemma 4 26B. Harness rankings barely transfer across models (rank correlation -0.05), so a small model in the right harness can approach a much larger model in the wrong one.\nThat is the problem the MCP server in this repo solves. Point your agent at it and it can call or to choose a harness matched to your model and task, instead of inheriting whichever harness someone else benchmarked.",
+      "items": [],
+      "title": "Why harnesses matter"
+    },
+    {
+      "description": "Every project in the list, plotted by adoption surface area (the simplicity ↔ capability axis) against GitHub stars. Colors are categories; the largest projects in each tier are labeled.\n\nThe same projects placed by how much unsupervised rope they're designed to give (autonomy) and what happens when a run dies (recovery). In the tables below, ★ marks headless-ready projects and ✱ marks durable ones. Both charts regenerate from the list data on every refresh.",
+      "items": [],
+      "title": "The landscape at a glance"
+    },
+    {
+      "description": "Reader's index: pick by what you want to do, not by category. Tag chips (e.g. · ) next to each row let you cross-filter by capability — see TAGS.md for the full cross-reference.",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "I want an always-on personal agent that lives in my chat apps — OpenClaw",
+          "description": ", Hermes, Khoj, Agent Zero, OpenHarness (HKUDS) · see Personal agent runtimes",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T04:35:14Z",
+            "owner": "openclaw",
+            "repo": "openclaw",
+            "stars": 386106
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want a turnkey coding agent today — opencode",
+          "description": ", Cline, Codex, Gemini CLI, OpenHands, crush, Roo Code · see Coding agent products (IDEs, CLIs, full suites)",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "TypeScript",
+            "last_commit": "2026-08-13T04:14:26Z",
+            "owner": "anomalyco",
+            "repo": "opencode",
+            "stars": 196717
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want to extend Claude Code, Codex, or OpenCode with skills and slash commands — Anthropic Skills",
+          "description": ", wshobson/agents, superpowers, GStack, pmstack · see Coding harness configs and SDKs",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-07T17:14:15Z",
+            "owner": "anthropics",
+            "repo": "skills",
+            "stars": 168590
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want low-code / visual workflows — langflow",
+          "description": ", Flowise, Dify, n8n · see Frameworks",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T03:08:46Z",
+            "owner": "langflow-ai",
+            "repo": "langflow",
+            "stars": 153139
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want browser-using agents — browser-use",
+          "description": ", Stagehand, WebVoyager, puppeteer-real-browser-mcp · see Plugins, MCPs, CLI tools",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-11T17:33:21Z",
+            "owner": "browser-use",
+            "repo": "browser-use",
+            "stars": 108993
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want a drop-in memory layer for agents — Mem0",
+          "description": ", Graphiti (Zep), claude-mem, agentlog, letta · see Plugins, MCPs, CLI tools",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:35:11Z",
+            "owner": "mem0ai",
+            "repo": "mem0",
+            "stars": 63153
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want a provider-agnostic LLM pipe (not a framework) — LiteLLM",
+          "description": ", vercel/ai · see Libraries and SDKs",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T04:36:14Z",
+            "owner": "BerriAI",
+            "repo": "litellm",
+            "stars": 56214
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want a general LLM app framework — langgraph",
+          "description": ", langchain, llama-index, pydantic-ai, agno · see Frameworks",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T20:03:25Z",
+            "owner": "langchain-ai",
+            "repo": "langgraph",
+            "stars": 39569
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want multi-agent orchestration — openai-agents-python",
+          "description": ", crewAI, autogen, Microsoft Agent Framework, PraisonAI, agent-squad · see Multi-agent and orchestration",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T03:37:53Z",
+            "owner": "openai",
+            "repo": "openai-agents-python",
+            "stars": 28593
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want a deep research / autonomous research agent — deepagents",
+          "description": ", gpt-researcher, openagents · see Research and task-specific harnesses",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T02:05:08Z",
+            "owner": "langchain-ai",
+            "repo": "deepagents",
+            "stars": 27711
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want sandboxed code execution for agent-generated code — E2B",
+          "description": ", Agent Sandbox, Daytona, smolagents, OpenHands · see Libraries and SDKs",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T17:10:45Z",
+            "owner": "e2b-dev",
+            "repo": "E2B",
+            "stars": 13371
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want to build my own coding harness from scratch — Claude Agent SDK",
+          "description": ", Google ADK, AutoHarness, SWE-agent, RepoMaster, claw-code-agent · see Coding harness configs and SDKs",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T21:11:11Z",
+            "owner": "anthropics",
+            "repo": "claude-agent-sdk-python",
+            "stars": 7872
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want to evaluate or benchmark agents — SWE-bench",
+          "description": ", Terminal-Bench, AgencyBench, inspect_ai, WebArena, VitaBench · see Evaluation and benchmarking harnesses",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-13T00:11:44Z",
+            "owner": "SWE-bench",
+            "repo": "SWE-bench",
+            "stars": 5626
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "I want to plug hundreds to thousands of tools without context bloat — MCP-Zero",
+          "description": ", ToolGen, ToolRAG, langgraph-bigtool · see Progressive disclosure harnesses",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2025-07-02T11:54:21Z",
+            "owner": "xfey",
+            "repo": "MCP-Zero",
+            "stars": 503
+          }
+        }
+      ],
+      "title": "Pick by use case"
+    },
+    {
+      "description": "Formats, runtimes, and patterns that reveal context, tools, or instructions in layers—index first, details on demand—to control tokens and improve agent focus (the \"map, not encyclopedia\" principle).",
+      "items": [],
+      "title": "Progressive disclosure harnesses"
+    },
+    {
+      "description": "Turnkey coding agents you install and run: IDE extensions, terminal CLIs, Dockerized workspaces. Each entry notes which part is the harness (the agent loop, tool wiring, approval model) versus the UI shell (VS Code extension, TUI, browser client).",
+      "items": [],
+      "title": "Coding agent products (IDEs, CLIs, full suites)"
+    },
+    {
+      "description": "Skill packs, slash-command libraries, meta-prompting frameworks, and official SDKs that give you the harness (the agent loop, planning, memory, hooks) without bundling a specific IDE or CLI shell.",
+      "items": [],
+      "title": "Coding harness configs and SDKs"
+    },
+    {
+      "description": "Always-on, self-hosted agents you run as a daemon and talk to from chat apps: gateway runtimes, second brains, and self-improving assistants. The agent as a product you operate, not a library you build with.",
+      "items": [],
+      "title": "Personal agent runtimes"
+    },
+    {
+      "description": "General-purpose agent and LLM application frameworks (the app layer, not harnesses per se).",
+      "items": [],
+      "title": "Frameworks"
+    },
+    {
+      "description": "Harnesses and patterns for multi-agent coordination and handoffs.",
+      "items": [],
+      "title": "Multi-agent and orchestration"
+    },
+    {
+      "description": "IDE plugins, concrete MCP servers, and CLI tools that give agents tools and context.",
+      "items": [],
+      "title": "Plugins, MCPs, CLI tools"
+    },
+    {
+      "description": "Persistent memory layers that give agents recall across turns and sessions: knowledge graphs, vector stores, and session-capture tools that survive a restart. The state a harness needs but rarely ships with.",
+      "items": [],
+      "title": "Memory and state"
+    },
+    {
+      "description": "Agentic eval systems, reasoning benchmarks, and open agent benchmarks.",
+      "items": [],
+      "title": "Evaluation and benchmarking harnesses"
+    },
+    {
+      "description": "Tracing, monitoring, and production evaluation for live agent runs: capture every step, tool call, and token, then score and debug in the loop. Distinct from the fixed-task benchmarks above—this is what you run against your own traffic.",
+      "items": [],
+      "title": "Observability and eval-ops"
+    },
+    {
+      "description": "Deep research, document QA, and domain-specific agent loops.",
+      "items": [],
+      "title": "Research and task-specific harnesses"
+    },
+    {
+      "description": "Lightweight runtimes, tool loops, and provider-agnostic harness primitives.",
+      "items": [],
+      "title": "Libraries and SDKs"
+    },
+    {
+      "description": "Archived upstream, or flagged for curation integrity (e.g. suspected star manipulation). Kept here — not deleted — for citation and transparency; excluded from the ranked count, the landscape chart, and harnesses.json's main list. Curation is the point: a starred repo is not automatically a credible one.",
+      "items": [],
+      "title": "⚰️ Graveyard"
+    },
+    {
+      "description": "Up-and-coming candidates — surfaced by the weekly discovery scan or submitted by the community — that haven't cleared the curation bar or a vetting pass yet. Stars refresh weekly from the discovery queue; descriptions are the projects' own, unvetted. Entries graduate into the ranked list above or drop off.",
+      "items": [],
+      "title": "🔭 On the radar"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "FAQ"
+    },
+    {
+      "description": "Harnesses designed for unattended runs, batches, and fleets: opencode, OpenHands, goose, Symphony, SWE-agent, Claude Agent SDK, RepoMaster, OpenClaw.",
+      "items": [],
+      "title": "Which agent harnesses can run unattended (headless)?"
+    },
+    {
+      "description": "Harnesses whose execution state persists across restarts: langgraph-bigtool, n8n, langgraph, mastra, letta, deepagents, pydantic-ai, Cloudflare Agents.",
+      "items": [],
+      "title": "Which agent harnesses survive a crash mid-task (durable)?"
+    },
+    {
+      "description": "118 of 161 carry a standard open-source license; the rest are source-available or unclear, and flagged per row.",
+      "items": [],
+      "title": "How many of these agent harnesses are open source?"
+    },
+    {
+      "description": "The runtime that turns a model into an agent: it decides what the model's reasoning is allowed to touch, and supplies the orchestration, tool wiring, memory, error recovery, and guardrails around per-turn inference.",
+      "items": [],
+      "title": "What is an agent harness?"
+    },
+    {
+      "description": "By relevance to harness concerns (environment, orchestration, lifecycle, guardrails) and by GitHub stars (captured 2026-08-09); each project also carries an adoption-surface tier and autonomy/recovery scores.",
+      "items": [],
+      "title": "How is this list ranked?"
+    },
+    {
+      "description": "Three machine-readable surfaces: harnesses.json (structured), llms.txt (one file), and an MCP server (uvx agent-harnesses-mcp) exposing recommend, compare, pick_harness, and search_harnesses.",
+      "items": [],
+      "title": "How can an AI agent use this list directly?"
+    },
+    {
+      "description": "The people who stopped mid-scroll, found a gap, and wrote it up — this list is better for each of them:\n@baskduf — harness-starter-kit · @ahwurm — LocalHarness · @liviux — LoopTroop · @rishabhpoddar — TeamCopilot, on the radar · @oldschoola — oh-my-pi · @pranshuchittora — agent-qa · @claudiusthebot — Talon · @madarco — AgentBox · @jmthomasofficial — JMT x402 Agent Tools · @ShukantPal — Proliferate · @hjqcan — GoodMemory · @777genius — Agent Teams AI · @S1LV3RJ1NX — mcp-guardian · @AmariahAK — Atlarix · @hardness1020 — awesome-agent-architecture · @razzant — Claudexor, Ouroboros · @allenshi16 — Nexus AI Pulse, HomeOffice AI · @ryanpettry — fractal · @reacher-z — ClawBench evaluation harness · @HelpMatey — Pin mcp2 · @rxdt — L∞pGate · @msaleme — red-team-blue-team-agent-fabric · @JackChen-me — Open Multi-Agent · @Q00 — Ouroboros\nAccepted submissions land with co-author credit on the commit that ships them. Promising projects that are still early aren't turned away — they get pinned to 🔭 On the radar and graduate as they grow. Add yours →",
+      "items": [],
+      "title": "🧡 Thank you, contributors"
+    },
+    {
+      "description": "Contributions are welcome. To add or suggest projects:",
+      "items": [
+        {
+          "node_type": "item",
+          "title": "Open an issue",
+          "description": "with the repo URL, category, and a short description.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T22:21:40Z",
+            "owner": "RyanAlberts",
+            "repo": "best-of-Agent-Harnesses",
+            "stars": 540
+          }
+        },
+        {
+          "node_type": "item",
+          "title": "Or submit a pull request against scripts/generate.py",
+          "description": "this README, projects.yaml, and TAGS.md are generated from it, so direct edits to them can't merge.",
+          "children": [],
+          "repo_info": {
+            "archived": false,
+            "language": "Python",
+            "last_commit": "2026-08-12T22:21:40Z",
+            "owner": "RyanAlberts",
+            "repo": "best-of-Agent-Harnesses",
+            "stars": 540
+          }
+        }
+      ],
+      "title": "Contribution"
+    },
+    {
+      "description": "If your project is in this list, you're welcome to show it in your README:\n",
+      "items": [],
+      "title": "Show your listing"
+    },
+    {
+      "description": "",
+      "items": [],
+      "title": "License"
+    }
+  ],
+  "metadata": {
+    "last_updated": "2026-08-13T04:36:21.662Z",
+    "original_repository": "RyanAlberts/best-of-Agent-Harnesses",
+    "original_repository_sha": "210cedd7fc2d1c0848d3bbacc85da99c871dd335",
+    "enhanced_repository": "enhansome/enhansome-best-of-Agent-Harnesses",
+    "enhanced_repository_description": null,
+    "title": "Awesome best of Agent Harnesses with stars"
+  }
+}
