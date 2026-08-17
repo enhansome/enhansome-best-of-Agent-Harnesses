@@ -26,10 +26,10 @@
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
-            "last_commit": "2026-08-16T08:14:57Z",
+            "last_commit": "2026-08-17T08:30:24Z",
             "owner": "openclaw",
             "repo": "openclaw",
-            "stars": 386426
+            "stars": 386515
           }
         },
         {
@@ -40,10 +40,10 @@
           "repo_info": {
             "archived": false,
             "language": "TypeScript",
-            "last_commit": "2026-08-16T08:15:00Z",
+            "last_commit": "2026-08-17T08:29:46Z",
             "owner": "anomalyco",
             "repo": "opencode",
-            "stars": 197901
+            "stars": 198264
           }
         },
         {
@@ -57,21 +57,21 @@
             "last_commit": "2026-08-13T18:09:56Z",
             "owner": "anthropics",
             "repo": "skills",
-            "stars": 169608
+            "stars": 169834
           }
         },
         {
           "node_type": "item",
           "title": "I want low-code / visual workflows — langflow",
-          "description": ", Flowise, Dify, n8n · see Frameworks",
+          "description": ", Dify, n8n · see Frameworks",
           "children": [],
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-16T06:13:02Z",
+            "last_commit": "2026-08-17T07:07:03Z",
             "owner": "langflow-ai",
             "repo": "langflow",
-            "stars": 153290
+            "stars": 153348
           }
         },
         {
@@ -82,10 +82,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-15T17:07:06Z",
+            "last_commit": "2026-08-16T18:50:46Z",
             "owner": "browser-use",
             "repo": "browser-use",
-            "stars": 109370
+            "stars": 109480
           }
         },
         {
@@ -99,7 +99,7 @@
             "last_commit": "2026-08-15T10:43:29Z",
             "owner": "mem0ai",
             "repo": "mem0",
-            "stars": 63354
+            "stars": 63424
           }
         },
         {
@@ -110,10 +110,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-16T03:56:07Z",
+            "last_commit": "2026-08-17T00:20:44Z",
             "owner": "BerriAI",
             "repo": "litellm",
-            "stars": 56440
+            "stars": 56517
           }
         },
         {
@@ -127,7 +127,7 @@
             "last_commit": "2026-08-16T00:22:02Z",
             "owner": "langchain-ai",
             "repo": "langgraph",
-            "stars": 39771
+            "stars": 39840
           }
         },
         {
@@ -138,10 +138,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-16T06:12:17Z",
+            "last_commit": "2026-08-17T08:11:14Z",
             "owner": "openai",
             "repo": "openai-agents-python",
-            "stars": 28667
+            "stars": 28709
           }
         },
         {
@@ -152,10 +152,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-15T13:29:30Z",
+            "last_commit": "2026-08-17T07:22:43Z",
             "owner": "langchain-ai",
             "repo": "deepagents",
-            "stars": 27804
+            "stars": 27840
           }
         },
         {
@@ -169,7 +169,7 @@
             "last_commit": "2026-08-13T23:32:08Z",
             "owner": "e2b-dev",
             "repo": "E2B",
-            "stars": 13417
+            "stars": 13428
           }
         },
         {
@@ -183,7 +183,7 @@
             "last_commit": "2026-08-14T22:35:52Z",
             "owner": "anthropics",
             "repo": "claude-agent-sdk-python",
-            "stars": 7898
+            "stars": 7908
           }
         },
         {
@@ -194,10 +194,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-16T05:01:04Z",
+            "last_commit": "2026-08-17T02:09:14Z",
             "owner": "SWE-bench",
             "repo": "SWE-bench",
-            "stars": 5643
+            "stars": 5651
           }
         },
         {
@@ -303,7 +303,7 @@
       "title": "Which agent harnesses survive a crash mid-task (durable)?"
     },
     {
-      "description": "118 of 161 carry a standard open-source license; the rest are source-available or unclear, and flagged per row.",
+      "description": "118 of 160 carry a standard open-source license; the rest are source-available or unclear, and flagged per row.",
       "items": [],
       "title": "How many of these agent harnesses are open source?"
     },
@@ -313,7 +313,7 @@
       "title": "What is an agent harness?"
     },
     {
-      "description": "By relevance to harness concerns (environment, orchestration, lifecycle, guardrails) and by GitHub stars (captured 2026-08-09); each project also carries an adoption-surface tier and autonomy/recovery scores.",
+      "description": "By relevance to harness concerns (environment, orchestration, lifecycle, guardrails) and by GitHub stars (captured 2026-08-16); each project also carries an adoption-surface tier and autonomy/recovery scores.",
       "items": [],
       "title": "How is this list ranked?"
     },
@@ -323,7 +323,7 @@
       "title": "How can an AI agent use this list directly?"
     },
     {
-      "description": "The people who stopped mid-scroll, found a gap, and wrote it up — this list is better for each of them:\n@baskduf — harness-starter-kit · @ahwurm — LocalHarness · @liviux — LoopTroop · @rishabhpoddar — TeamCopilot, on the radar · @oldschoola — oh-my-pi · @pranshuchittora — agent-qa · @claudiusthebot — Talon · @madarco — AgentBox · @jmthomasofficial — JMT x402 Agent Tools · @ShukantPal — Proliferate · @hjqcan — GoodMemory · @777genius — Agent Teams AI · @S1LV3RJ1NX — mcp-guardian · @AmariahAK — Atlarix · @hardness1020 — awesome-agent-architecture · @razzant — Claudexor, Ouroboros · @allenshi16 — Nexus AI Pulse, HomeOffice AI · @ryanpettry — fractal · @reacher-z — ClawBench evaluation harness · @HelpMatey — Pin mcp2 · @rxdt — L∞pGate · @msaleme — red-team-blue-team-agent-fabric · @JackChen-me — Open Multi-Agent · @Q00 — Ouroboros\nAccepted submissions land with co-author credit on the commit that ships them. Promising projects that are still early aren't turned away — they get pinned to 🔭 On the radar and graduate as they grow. Add yours →",
+      "description": "The people who stopped mid-scroll, found a gap, and wrote it up — this list is better for each of them:\n@baskduf — harness-starter-kit · @ahwurm — LocalHarness · @liviux — LoopTroop · @rishabhpoddar — TeamCopilot, on the radar · @oldschoola — oh-my-pi · @pranshuchittora — agent-qa · @claudiusthebot — Talon · @madarco — AgentBox · @jmthomasofficial — JMT x402 Agent Tools · @ShukantPal — Proliferate · @hjqcan — GoodMemory · @777genius — Agent Teams AI · @S1LV3RJ1NX — mcp-guardian · @AmariahAK — Atlarix · @hardness1020 — awesome-agent-architecture · @razzant — Claudexor, Ouroboros · @allenshi16 — Nexus AI Pulse, HomeOffice AI · @ryanpettry — fractal · @reacher-z — ClawBench evaluation harness · @HelpMatey — Pin mcp2 · @rxdt — L∞pGate · @msaleme — red-team-blue-team-agent-fabric · @JackChen-me — Open Multi-Agent · @Q00 — Ouroboros · @danawoodman — PR #78 · @JanYork — LWC Local Wiki CLI · @labmimors — MCP Lens\nAccepted submissions land with co-author credit on the commit that ships them. Promising projects that are still early aren't turned away — they get pinned to 🔭 On the radar and graduate as they grow. Add yours →",
       "items": [],
       "title": "🧡 Thank you, contributors"
     },
@@ -338,10 +338,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-15T14:24:46Z",
+            "last_commit": "2026-08-16T15:51:50Z",
             "owner": "RyanAlberts",
             "repo": "best-of-Agent-Harnesses",
-            "stars": 582
+            "stars": 595
           }
         },
         {
@@ -352,10 +352,10 @@
           "repo_info": {
             "archived": false,
             "language": "Python",
-            "last_commit": "2026-08-15T14:24:46Z",
+            "last_commit": "2026-08-16T15:51:50Z",
             "owner": "RyanAlberts",
             "repo": "best-of-Agent-Harnesses",
-            "stars": 582
+            "stars": 595
           }
         }
       ],
@@ -373,9 +373,9 @@
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-16T08:15:32.762Z",
+    "last_updated": "2026-08-17T08:30:37.796Z",
     "original_repository": "RyanAlberts/best-of-Agent-Harnesses",
-    "original_repository_sha": "210cedd7fc2d1c0848d3bbacc85da99c871dd335",
+    "original_repository_sha": "0a52d4ecafe63ff4387d2500bce9561d0cede3c0",
     "enhanced_repository": "enhansome/enhansome-best-of-Agent-Harnesses",
     "enhanced_repository_description": null,
     "title": "Awesome best of Agent Harnesses with stars"
