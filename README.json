@@ -1,21 +1,6 @@
 {
   "items": [
     {
-      "description": "A model answers; an agent acts. An agent harness is the runtime that turns one into the other: the model thinks, the harness decides what that thinking is allowed to touch.\nSimon Willison's definition of the agent itself is the cleanest: \"an LLM agent runs tools in a loop to achieve a goal.\" The harness is everything around that loop: which tools exist, what needs approval, what the model sees each turn, what survives a crash. Andrej Karpathy named the architecture back in 2023: the model is \"the kernel process of a new Operating System\", and the harness is the rest of that OS, its scheduler, permissions, and memory. The SWE-agent paper proved the stakes by coining the agent-computer interface: how tools and feedback are presented changes what a model can do, independent of the model. The field's advice has since converged on investing here rather than in framework plumbing, from Anthropic's build-simple guidance to Jerry Liu's argument that the framework era is over and the layers that matter now are skills, tools, and context quality. Those are the layers this list catalogs.",
-      "items": [],
-      "title": "What is an agent harness?"
-    },
-    {
-      "description": "Better models make harnesses more important: more capabilities mean more failure modes, and production needs retry logic, fallbacks, and validation. Harness quality, not just model quality, determines whether agents actually ship. This list ranks projects by relevance to harness concerns (environment, orchestration, lifecycle, guardrails) and by stars/activity.\nThe benchmark data now backs this up. On SWE-bench Pro, \"swapping the agent harness changed pass@1 more than many model upgrades do\" (AINews, Aug 8 2026, citing analysis by @joelniklaus). Same model, different harness: 23% to 52% pass@1 on GLM-5.2, and 15% to 36% on Gemma 4 26B. Harness rankings barely transfer across models (rank correlation -0.05), so a small model in the right harness can approach a much larger model in the wrong one.\nThat is the problem the MCP server in this repo solves. Point your agent at it and it can call or to choose a harness matched to your model and task, instead of inheriting whichever harness someone else benchmarked.",
-      "items": [],
-      "title": "Why harnesses matter"
-    },
-    {
-      "description": "Every project in the list, plotted by adoption surface area (the simplicity ↔ capability axis) against GitHub stars. Colors are categories; the largest projects in each tier are labeled.\n\nThe same projects placed by how much unsupervised rope they're designed to give (autonomy) and what happens when a run dies (recovery). In the tables below, ★ marks headless-ready projects and ✱ marks durable ones. Both charts regenerate from the list data on every refresh.",
-      "items": [],
-      "title": "The landscape at a glance"
-    },
-    {
       "description": "Reader's index: pick by what you want to do, not by category. Tag chips (e.g. · ) next to each row let you cross-filter by capability — see TAGS.md for the full cross-reference.",
       "items": [
         {
@@ -25,11 +10,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1103012935,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T08:22:35Z",
+            "last_commit": "2026-08-19T08:21:47Z",
             "owner": "openclaw",
             "repo": "openclaw",
-            "stars": 386604
+            "stars": 386726
           }
         },
         {
@@ -39,11 +25,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 975734319,
             "language": "TypeScript",
-            "last_commit": "2026-08-18T08:16:31Z",
+            "last_commit": "2026-08-19T07:52:23Z",
             "owner": "anomalyco",
             "repo": "opencode",
-            "stars": 198625
+            "stars": 198979
           }
         },
         {
@@ -53,11 +40,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1061953414,
             "language": "Python",
-            "last_commit": "2026-08-17T17:23:18Z",
+            "last_commit": "2026-08-18T16:02:06Z",
             "owner": "anthropics",
             "repo": "skills",
-            "stars": 170134
+            "stars": 170373
           }
         },
         {
@@ -67,11 +55,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 599320067,
             "language": "Python",
-            "last_commit": "2026-08-18T07:29:51Z",
+            "last_commit": "2026-08-19T05:46:38Z",
             "owner": "langflow-ai",
             "repo": "langflow",
-            "stars": 153395
+            "stars": 153451
           }
         },
         {
@@ -81,11 +70,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 881458615,
             "language": "Python",
-            "last_commit": "2026-08-18T00:25:56Z",
+            "last_commit": "2026-08-18T17:07:08Z",
             "owner": "browser-use",
             "repo": "browser-use",
-            "stars": 109572
+            "stars": 109691
           }
         },
         {
@@ -95,11 +85,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 656099147,
             "language": "Python",
-            "last_commit": "2026-08-18T05:29:39Z",
+            "last_commit": "2026-08-18T15:51:45Z",
             "owner": "mem0ai",
             "repo": "mem0",
-            "stars": 63509
+            "stars": 63576
           }
         },
         {
@@ -109,11 +100,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 671269505,
             "language": "Python",
-            "last_commit": "2026-08-18T08:15:47Z",
+            "last_commit": "2026-08-19T08:12:00Z",
             "owner": "BerriAI",
             "repo": "litellm",
-            "stars": 56610
+            "stars": 56720
           }
         },
         {
@@ -123,11 +115,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 676672661,
             "language": "Python",
-            "last_commit": "2026-08-16T00:22:02Z",
+            "last_commit": "2026-08-19T00:23:46Z",
             "owner": "langchain-ai",
             "repo": "langgraph",
-            "stars": 39909
+            "stars": 39995
           }
         },
         {
@@ -137,11 +130,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 946380199,
             "language": "Python",
-            "last_commit": "2026-08-18T08:17:19Z",
+            "last_commit": "2026-08-19T06:43:58Z",
             "owner": "openai",
             "repo": "openai-agents-python",
-            "stars": 28734
+            "stars": 28761
           }
         },
         {
@@ -151,11 +145,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1027384981,
             "language": "Python",
-            "last_commit": "2026-08-18T05:18:44Z",
+            "last_commit": "2026-08-19T08:10:18Z",
             "owner": "langchain-ai",
             "repo": "deepagents",
-            "stars": 27878
+            "stars": 27919
           }
         },
         {
@@ -165,11 +160,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 609539715,
             "language": "Python",
-            "last_commit": "2026-08-17T22:37:54Z",
+            "last_commit": "2026-08-19T07:11:12Z",
             "owner": "e2b-dev",
             "repo": "E2B",
-            "stars": 13447
+            "stars": 13466
           }
         },
         {
@@ -179,11 +175,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1000486904,
             "language": "Python",
-            "last_commit": "2026-08-17T23:31:17Z",
+            "last_commit": "2026-08-18T20:58:33Z",
             "owner": "anthropics",
             "repo": "claude-agent-sdk-python",
-            "stars": 7917
+            "stars": 7931
           }
         },
         {
@@ -193,11 +190,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 700117650,
             "language": "Python",
-            "last_commit": "2026-08-18T01:07:16Z",
+            "last_commit": "2026-08-18T23:53:40Z",
             "owner": "SWE-bench",
             "repo": "SWE-bench",
-            "stars": 5658
+            "stars": 5665
           }
         },
         {
@@ -207,128 +205,19 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 994272836,
             "language": "Python",
             "last_commit": "2025-07-02T11:54:21Z",
             "owner": "xfey",
             "repo": "MCP-Zero",
-            "stars": 507
+            "stars": 509
           }
         }
       ],
       "title": "Pick by use case"
     },
     {
-      "description": "Formats, runtimes, and patterns that reveal context, tools, or instructions in layers—index first, details on demand—to control tokens and improve agent focus (the \"map, not encyclopedia\" principle).",
-      "items": [],
-      "title": "Progressive disclosure harnesses"
-    },
-    {
-      "description": "Turnkey coding agents you install and run: IDE extensions, terminal CLIs, Dockerized workspaces. Each entry notes which part is the harness (the agent loop, tool wiring, approval model) versus the UI shell (VS Code extension, TUI, browser client).",
-      "items": [],
-      "title": "Coding agent products (IDEs, CLIs, full suites)"
-    },
-    {
-      "description": "Skill packs, slash-command libraries, meta-prompting frameworks, and official SDKs that give you the harness (the agent loop, planning, memory, hooks) without bundling a specific IDE or CLI shell.",
-      "items": [],
-      "title": "Coding harness configs and SDKs"
-    },
-    {
-      "description": "Always-on, self-hosted agents you run as a daemon and talk to from chat apps: gateway runtimes, second brains, and self-improving assistants. The agent as a product you operate, not a library you build with.",
-      "items": [],
-      "title": "Personal agent runtimes"
-    },
-    {
-      "description": "General-purpose agent and LLM application frameworks (the app layer, not harnesses per se).",
-      "items": [],
-      "title": "Frameworks"
-    },
-    {
-      "description": "Harnesses and patterns for multi-agent coordination and handoffs.",
-      "items": [],
-      "title": "Multi-agent and orchestration"
-    },
-    {
-      "description": "IDE plugins, concrete MCP servers, and CLI tools that give agents tools and context.",
-      "items": [],
-      "title": "Plugins, MCPs, CLI tools"
-    },
-    {
-      "description": "Persistent memory layers that give agents recall across turns and sessions: knowledge graphs, vector stores, and session-capture tools that survive a restart. The state a harness needs but rarely ships with.",
-      "items": [],
-      "title": "Memory and state"
-    },
-    {
-      "description": "Agentic eval systems, reasoning benchmarks, and open agent benchmarks.",
-      "items": [],
-      "title": "Evaluation and benchmarking harnesses"
-    },
-    {
-      "description": "Tracing, monitoring, and production evaluation for live agent runs: capture every step, tool call, and token, then score and debug in the loop. Distinct from the fixed-task benchmarks above—this is what you run against your own traffic.",
-      "items": [],
-      "title": "Observability and eval-ops"
-    },
-    {
-      "description": "Deep research, document QA, and domain-specific agent loops.",
-      "items": [],
-      "title": "Research and task-specific harnesses"
-    },
-    {
-      "description": "Lightweight runtimes, tool loops, and provider-agnostic harness primitives.",
-      "items": [],
-      "title": "Libraries and SDKs"
-    },
-    {
-      "description": "Archived upstream, or flagged for curation integrity (e.g. suspected star manipulation). Kept here — not deleted — for citation and transparency; excluded from the ranked count, the landscape chart, and harnesses.json's main list. Curation is the point: a starred repo is not automatically a credible one.",
-      "items": [],
-      "title": "⚰️ Graveyard"
-    },
-    {
-      "description": "Up-and-coming candidates — surfaced by the weekly discovery scan or submitted by the community — that haven't cleared the curation bar or a vetting pass yet. Stars refresh weekly from the discovery queue; descriptions are the projects' own, unvetted. Entries graduate into the ranked list above or drop off.",
-      "items": [],
-      "title": "🔭 On the radar"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "FAQ"
-    },
-    {
-      "description": "Harnesses designed for unattended runs, batches, and fleets: opencode, OpenHands, goose, Symphony, SWE-agent, Claude Agent SDK, RepoMaster, OpenClaw.",
-      "items": [],
-      "title": "Which agent harnesses can run unattended (headless)?"
-    },
-    {
-      "description": "Harnesses whose execution state persists across restarts: langgraph-bigtool, n8n, langgraph, mastra, letta, deepagents, pydantic-ai, Cloudflare Agents.",
-      "items": [],
-      "title": "Which agent harnesses survive a crash mid-task (durable)?"
-    },
-    {
-      "description": "118 of 160 carry a standard open-source license; the rest are source-available or unclear, and flagged per row.",
-      "items": [],
-      "title": "How many of these agent harnesses are open source?"
-    },
-    {
-      "description": "The runtime that turns a model into an agent: it decides what the model's reasoning is allowed to touch, and supplies the orchestration, tool wiring, memory, error recovery, and guardrails around per-turn inference.",
-      "items": [],
-      "title": "What is an agent harness?"
-    },
-    {
-      "description": "By relevance to harness concerns (environment, orchestration, lifecycle, guardrails) and by GitHub stars (captured 2026-08-16); each project also carries an adoption-surface tier and autonomy/recovery scores.",
-      "items": [],
-      "title": "How is this list ranked?"
-    },
-    {
-      "description": "Three machine-readable surfaces: harnesses.json (structured), llms.txt (one file), and an MCP server (uvx agent-harnesses-mcp) exposing recommend, compare, pick_harness, and search_harnesses.",
-      "items": [],
-      "title": "How can an AI agent use this list directly?"
-    },
-    {
-      "description": "The people who stopped mid-scroll, found a gap, and wrote it up — this list is better for each of them:\n@baskduf — harness-starter-kit · @ahwurm — LocalHarness · @liviux — LoopTroop · @rishabhpoddar — TeamCopilot, on the radar · @oldschoola — oh-my-pi · @pranshuchittora — agent-qa · @claudiusthebot — Talon · @madarco — AgentBox · @jmthomasofficial — JMT x402 Agent Tools · @ShukantPal — Proliferate · @hjqcan — GoodMemory · @777genius — Agent Teams AI · @S1LV3RJ1NX — mcp-guardian · @AmariahAK — Atlarix · @hardness1020 — awesome-agent-architecture · @razzant — Claudexor, Ouroboros · @allenshi16 — Nexus AI Pulse, HomeOffice AI · @ryanpettry — fractal · @reacher-z — ClawBench evaluation harness · @HelpMatey — Pin mcp2 · @rxdt — L∞pGate · @msaleme — red-team-blue-team-agent-fabric · @JackChen-me — Open Multi-Agent · @Q00 — Ouroboros · @danawoodman — PR #78 · @JanYork — LWC Local Wiki CLI · @labmimors — MCP Lens\nAccepted submissions land with co-author credit on the commit that ships them. Promising projects that are still early aren't turned away — they get pinned to 🔭 On the radar and graduate as they grow. Add yours →",
-      "items": [],
-      "title": "🧡 Thank you, contributors"
-    },
-    {
-      "description": "Contributions are welcome. To add or suggest projects:",
+      "description": "Contributions are welcome. To add or suggest projects:\nPromising projects that don't clear the curation bar yet get pinned to 🔭 On the radar — a submission that lands there isn't rejected, it's queued.\nFor contribution guidelines, see CONTRIBUTING.md and the Code of Conduct.",
       "items": [
         {
           "node_type": "item",
@@ -337,11 +226,12 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1175588150,
             "language": "Python",
-            "last_commit": "2026-08-17T14:29:32Z",
+            "last_commit": "2026-08-18T14:23:17Z",
             "owner": "RyanAlberts",
             "repo": "best-of-Agent-Harnesses",
-            "stars": 609
+            "stars": 622
           }
         },
         {
@@ -351,29 +241,20 @@
           "children": [],
           "repo_info": {
             "archived": false,
+            "id": 1175588150,
             "language": "Python",
-            "last_commit": "2026-08-17T14:29:32Z",
+            "last_commit": "2026-08-18T14:23:17Z",
             "owner": "RyanAlberts",
             "repo": "best-of-Agent-Harnesses",
-            "stars": 609
+            "stars": 622
           }
         }
       ],
       "title": "Contribution"
-    },
-    {
-      "description": "If your project is in this list, you're welcome to show it in your README:\n",
-      "items": [],
-      "title": "Show your listing"
-    },
-    {
-      "description": "",
-      "items": [],
-      "title": "License"
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-18T08:22:59.334Z",
+    "last_updated": "2026-08-19T08:23:01.763Z",
     "original_repository": "RyanAlberts/best-of-Agent-Harnesses",
     "original_repository_sha": "0a52d4ecafe63ff4387d2500bce9561d0cede3c0",
     "enhanced_repository": "enhansome/enhansome-best-of-Agent-Harnesses",
