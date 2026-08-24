@@ -12,10 +12,10 @@
             "archived": false,
             "id": 1103012935,
             "language": "TypeScript",
-            "last_commit": "2026-08-23T08:15:55Z",
+            "last_commit": "2026-08-24T08:34:39Z",
             "owner": "openclaw",
             "repo": "openclaw",
-            "stars": 387190
+            "stars": 387282
           }
         },
         {
@@ -27,10 +27,10 @@
             "archived": false,
             "id": 975734319,
             "language": "TypeScript",
-            "last_commit": "2026-08-23T08:15:19Z",
+            "last_commit": "2026-08-24T08:22:01Z",
             "owner": "anomalyco",
             "repo": "opencode",
-            "stars": 200448
+            "stars": 200808
           }
         },
         {
@@ -45,7 +45,7 @@
             "last_commit": "2026-08-21T17:10:55Z",
             "owner": "anthropics",
             "repo": "skills",
-            "stars": 171080
+            "stars": 171276
           }
         },
         {
@@ -57,10 +57,10 @@
             "archived": false,
             "id": 599320067,
             "language": "Python",
-            "last_commit": "2026-08-23T04:48:30Z",
+            "last_commit": "2026-08-24T07:09:18Z",
             "owner": "langflow-ai",
             "repo": "langflow",
-            "stars": 153570
+            "stars": 153610
           }
         },
         {
@@ -75,7 +75,7 @@
             "last_commit": "2026-08-22T23:25:03Z",
             "owner": "browser-use",
             "repo": "browser-use",
-            "stars": 110186
+            "stars": 110302
           }
         },
         {
@@ -87,10 +87,10 @@
             "archived": false,
             "id": 656099147,
             "language": "Python",
-            "last_commit": "2026-08-23T02:19:56Z",
+            "last_commit": "2026-08-24T08:33:54Z",
             "owner": "mem0ai",
             "repo": "mem0",
-            "stars": 63854
+            "stars": 63922
           }
         },
         {
@@ -102,10 +102,10 @@
             "archived": false,
             "id": 671269505,
             "language": "Python",
-            "last_commit": "2026-08-23T08:07:30Z",
+            "last_commit": "2026-08-24T07:00:33Z",
             "owner": "BerriAI",
             "repo": "litellm",
-            "stars": 57043
+            "stars": 57120
           }
         },
         {
@@ -120,7 +120,7 @@
             "last_commit": "2026-08-23T00:22:18Z",
             "owner": "langchain-ai",
             "repo": "langgraph",
-            "stars": 40265
+            "stars": 40335
           }
         },
         {
@@ -132,10 +132,10 @@
             "archived": false,
             "id": 946380199,
             "language": "Python",
-            "last_commit": "2026-08-23T04:00:15Z",
+            "last_commit": "2026-08-24T02:19:30Z",
             "owner": "openai",
             "repo": "openai-agents-python",
-            "stars": 28878
+            "stars": 28918
           }
         },
         {
@@ -147,10 +147,10 @@
             "archived": false,
             "id": 1027384981,
             "language": "Python",
-            "last_commit": "2026-08-23T08:07:09Z",
+            "last_commit": "2026-08-24T08:16:06Z",
             "owner": "langchain-ai",
             "repo": "deepagents",
-            "stars": 28094
+            "stars": 28316
           }
         },
         {
@@ -162,10 +162,10 @@
             "archived": false,
             "id": 609539715,
             "language": "Python",
-            "last_commit": "2026-08-22T12:47:27Z",
+            "last_commit": "2026-08-24T07:18:49Z",
             "owner": "e2b-dev",
             "repo": "E2B",
-            "stars": 13522
+            "stars": 13531
           }
         },
         {
@@ -180,7 +180,7 @@
             "last_commit": "2026-08-23T00:53:03Z",
             "owner": "anthropics",
             "repo": "claude-agent-sdk-python",
-            "stars": 7954
+            "stars": 7964
           }
         },
         {
@@ -195,7 +195,7 @@
             "last_commit": "2026-08-18T23:53:40Z",
             "owner": "SWE-bench",
             "repo": "SWE-bench",
-            "stars": 5689
+            "stars": 5698
           }
         },
         {
@@ -210,7 +210,7 @@
             "last_commit": "2025-07-02T11:54:21Z",
             "owner": "xfey",
             "repo": "MCP-Zero",
-            "stars": 512
+            "stars": 511
           }
         }
       ],
@@ -228,10 +228,10 @@
             "archived": false,
             "id": 1175588150,
             "language": "Python",
-            "last_commit": "2026-08-22T14:20:21Z",
+            "last_commit": "2026-08-23T14:22:36Z",
             "owner": "RyanAlberts",
             "repo": "best-of-Agent-Harnesses",
-            "stars": 672
+            "stars": 682
           }
         },
         {
@@ -243,10 +243,10 @@
             "archived": false,
             "id": 1175588150,
             "language": "Python",
-            "last_commit": "2026-08-22T14:20:21Z",
+            "last_commit": "2026-08-23T14:22:36Z",
             "owner": "RyanAlberts",
             "repo": "best-of-Agent-Harnesses",
-            "stars": 672
+            "stars": 682
           }
         }
       ],
@@ -254,10 +254,10 @@
     }
   ],
   "metadata": {
-    "last_updated": "2026-08-23T08:17:03.685Z",
+    "last_updated": "2026-08-24T08:35:10.863Z",
     "original_repository": "RyanAlberts/best-of-Agent-Harnesses",
     "original_repository_id": 1175588150,
-    "original_repository_sha": "0a52d4ecafe63ff4387d2500bce9561d0cede3c0",
+    "original_repository_sha": "ece314654d2c23fe7bd69fc6ef7088f093207e49",
     "enhanced_repository": "enhansome/enhansome-best-of-Agent-Harnesses",
     "enhanced_repository_description": null,
     "title": "Awesome best of Agent Harnesses with stars"
